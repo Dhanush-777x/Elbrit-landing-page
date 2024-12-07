@@ -42,7 +42,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-10 -translate-y-24 md:-translate-y-36">
+    <section className="-translate-y-24 md:-translate-y-36">
       <div className="container mx-auto">
         <div className="bg-primary rounded-[60px] p-10 pb-0">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
