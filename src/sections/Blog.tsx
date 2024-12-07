@@ -82,9 +82,9 @@ const Blog = () => {
               key={blog.id}
               className={`relative overflow-hidden rounded-lg shadow-lg ${
                 index === 0 || index === 2 || index === 4 || index === 5
-                  ? "lg:row-span-2 h-80"
-                  : "lg:row-span-1 h-48"
-              }` }
+                  ? "lg:row-span-2 h-48 lg:h-80"
+                  : "lg:row-span-1 h-48 lg:h-48"
+              } ` }
             >
               {/* Background Image */}
               <div className={`${blog.image}`}></div>
@@ -93,11 +93,12 @@ const Blog = () => {
               <div className="absolute inset-0 bg-black hover:bg-black/30 transition-all duration-250 bg-opacity-50"></div>
 
               {/* Ribbon for Date */}
-              <div className="absolute top-4 -left-2">
-                <div className="bg-linkTextColor text-white text-xs font-bold px-3 py-1 rounded-r-full">
+              <div className="absolute top-4 shadow-white">
+                <p className="bg-white text-linkTextColor text-xs font-bold px-3 py-1 rounded-r-full">
                   {blog.date}
-                </div>
+                </p>
               </div>
+
               {/* Content */}
               <div className="relative z-10 p-6 text-white">
                 <h4 className="text-md font-semibold mt-10">{blog.title}</h4>

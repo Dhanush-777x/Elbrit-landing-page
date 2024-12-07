@@ -1,13 +1,15 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import HeroImage from "@/assets/hero-img.png";
 import vitaminsIcon from "@/assets/Frame-8363.png.svg";
 import weightLossIcon from "@/assets/weight-loss.png";
 import functionalFoodIcon from "@/assets/functional-food.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="md:p-10 p-4">
+    <section className="md:p-24 p-4">
       <div className="bg-secondary p-6 pb-36 md:p-10 md:pb-36 rounded-lg container">
         <h1 className="text-primary text-center font-jost text-4xl md:text-6xl lg:text-8xl font-bold translate-y-12 md:translate-y-16">
           Essential Vitamins
@@ -27,10 +29,23 @@ const Hero = () => {
           {/* Second Column */}
           <div className="relative order-1 md:order-2">
             <div className="bg-yellow-100 h-64 w-64 rounded-tl-[100px] rounded-br-[100px]"></div>
-            <Image
-              src={HeroImage}
+            <motion.img
+              src={HeroImage.src}
               alt="HeroImage"
               className="absolute inset-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-72 w-72 object-cover"
+              initial={{
+                translateX: "-50%", // Match Tailwind `-translate-x-1/2`
+                translateY: "-66%", // Match Tailwind `-translate-y-2/3`
+              }}
+              animate={{
+                translateY: ["-66.666%", "-60%", "-66.666%"],
+              }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "mirror",
+                duration: 4,
+                ease: "easeInOut",
+              }}
             />
           </div>
 
