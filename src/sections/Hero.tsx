@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="md:p-10 p-4">
       <div className="bg-secondary p-6 pb-36 md:p-10 md:pb-36 rounded-lg container">
-        <h1 className="text-primary text-center font-jost text-3xl md:text-4xl font-bold">
+        <h1 className="text-primary text-center font-jost text-4xl md:text-6xl lg:text-8xl font-bold translate-y-12 md:translate-y-16">
           Essential Vitamins
         </h1>
         <div className="flex flex-col md:flex-row justify-center md:justify-evenly gap-6 mt-20 items-center">

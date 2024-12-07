@@ -22,6 +22,7 @@ const config: Config = {
         secondary: "#E2F5FB",
         primary: "#17414F",
         textColor: "#727272",
+        linkTextColor: '#003569'
       },
       container: {
         center: true,
