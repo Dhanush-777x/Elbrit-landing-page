@@ -1,6 +1,6 @@
 import Logo from "@/assets/logo.png";
 import Image from "next/image";
-import { ArrowBigRight, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 export const Header = () => {
   return (
