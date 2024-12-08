@@ -7,7 +7,7 @@ import Ingredients from "@/sections/Ingredients";
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div className="">
         <Header />
         <Hero/>
         <Features />

@@ -9,12 +9,12 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="md:p-24 p-4">
+    <section className="md:p-10 p-4">
       <div className="bg-secondary p-6 pb-36 md:p-10 md:pb-36 rounded-lg container">
         <h1 className="text-primary text-center font-jost text-4xl md:text-6xl lg:text-8xl font-bold translate-y-12 md:translate-y-16">
           Essential Vitamins
         </h1>
-        <div className="flex flex-col md:flex-row justify-center md:justify-evenly gap-6 mt-20 items-center">
+        <div className="flex flex-col md:flex-row justify-cent eer md:justify-evenly gap-6 mt-20 items-center">
           {/* First Column */}
           <div className="space-y-4 flex flex-col w-48 order-2 md:order-1 text-center md:text-left">
             <h2 className="text-sm text-primary">Online Medical Supplies</h2>
@@ -28,25 +28,30 @@ const Hero = () => {
 
           {/* Second Column */}
           <div className="relative order-1 md:order-2">
-            <div className="bg-yellow-100 h-64 w-64 rounded-tl-[100px] rounded-br-[100px]"></div>
-            <motion.img
-              src={HeroImage.src}
-              alt="HeroImage"
-              className="absolute inset-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-72 w-72 object-cover"
-              initial={{
-                translateX: "-50%", // Match Tailwind `-translate-x-1/2`
-                translateY: "-66%", // Match Tailwind `-translate-y-2/3`
-              }}
-              animate={{
-                translateY: ["-66.666%", "-60%", "-66.666%"],
-              }}
-              transition={{
-                repeat: Infinity,
-                repeatType: "mirror",
-                duration: 4,
-                ease: "easeInOut",
-              }}
-            />
+            <div className="bg-yellow-100 h-64 w-64 rounded-tl-[100px] rounded-br-[100px] relative">
+              <motion.div
+                initial={{
+                  translateX: "0%",
+                  translateY: "0%",
+                }}
+                animate={{
+                  translateY: ["-30%", "-20%", "-30%"],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  duration: 5,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  src={HeroImage}
+                  alt="Hero Image"
+                  width={288}
+                  height={288}
+                />
+              </motion.div>
+            </div>
           </div>
 
           {/* Third Column */}
@@ -56,8 +61,8 @@ const Hero = () => {
               <Image
                 src={vitaminsIcon}
                 alt="Vitamins icon"
-                height={40}
-                width={40}
+                height={45}
+                width={45}
               />
               <div>
                 <h3 className="text-lg font-bold">Vitamins</h3>
@@ -71,8 +76,8 @@ const Hero = () => {
               <Image
                 src={weightLossIcon}
                 alt="Vitamins icon"
-                height={40}
-                width={40}
+                height={45}
+                width={45}
               />
               <div>
                 <h3 className="text-lg font-bold">Weight Loss</h3>
@@ -86,8 +91,8 @@ const Hero = () => {
               <Image
                 src={functionalFoodIcon}
                 alt="Vitamins icon"
-                height={40}
-                width={40}
+                height={45}
+                width={45}
               />
               <div>
                 <h3 className="text-lg font-bold">Functional Foods</h3>
