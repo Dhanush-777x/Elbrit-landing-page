@@ -14,7 +14,7 @@ export const Header = () => {
               <a href="#">Features</a>
               <a href="#">Ingredients</a>
               <a href="#">Blogs</a>
-              <button className="bg-primary text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight shadow-md">
+              <button className="bg-primary text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight shadow-md hover:scale-105 transition-all duration-200">
                 Contact Us
               </button>
             </nav>

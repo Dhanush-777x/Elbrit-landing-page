@@ -59,7 +59,7 @@ const Ingredients = () => {
           {firstRowCards.map((card, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg shadow-lg flex flex-col justify-between h-48 ${
+              className={`p-6 rounded-lg shadow-lg flex flex-col justify-between h-48 hover:-rotate-2 hover:scale-105 hover:shadow-xl transition-all duration-200 ${
                 card.isWhiteCard ? "bg-white md:col-span-2 lg:col-span-1" : card.background
               }`}
             >
@@ -110,7 +110,7 @@ const Ingredients = () => {
             ) : (
               <div
                 key={index}
-                className={`p-6 rounded-lg shadow-lg flex flex-col justify-between h-48 ${element.background} ${ element.title === "Lactobacillus" ? "md:col-span-2 lg:col-span-1" : "" }`}
+                className={`p-6 rounded-lg shadow-lg flex flex-col justify-between h-48 hover:rotate-2 hover:scale-105 transition-all duration-200 ${element.background} ${ element.title === "Lactobacillus" ? "md:col-span-2 lg:col-span-1" : "" }`}
               >
                 <div>
                   <h3 className="text-lg font-bold text-gray-800">

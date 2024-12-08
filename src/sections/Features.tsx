@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import { MotionDiv } from "@/app/components/common/motion";
 import feature1 from "@/assets/feature1.svg";
 import feature2 from "@/assets/feature2.svg";
 import feature3 from "@/assets/feature3.svg";
@@ -58,7 +58,7 @@ const Features = () => {
                 key={index}
                 className="flex flex-col items-center p-6 rounded-lg -translate-y-24"
               >
-                <div className="flex items-center justify-center w-20 h-20 p-7 bg-white text-white rounded-full mb-4 text-2xl">
+                <div className="flex items-center justify-center w-20 h-20 p-7 bg-white text-white rounded-full mb-4 text-2xl border-b-4 border-green-400">
                   <Image
                     src={feature.icon.src}
                     height={40}

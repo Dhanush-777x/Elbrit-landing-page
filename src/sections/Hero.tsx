@@ -6,15 +6,34 @@ import vitaminsIcon from "@/assets/Frame-8363.png.svg";
 import weightLossIcon from "@/assets/weight-loss.png";
 import functionalFoodIcon from "@/assets/functional-food.png";
 import { motion } from "framer-motion";
+import { MotionH2 } from "@/app/components/common/motion";
 
 const Hero = () => {
   return (
     <section className="md:p-10 p-4">
       <div className="bg-secondary p-6 pb-36 md:p-10 md:pb-36 rounded-lg container">
-        <h1 className="text-primary text-center font-jost text-4xl md:text-6xl lg:text-8xl font-bold translate-y-12 md:translate-y-16">
+        <MotionH2
+          className="text-primary text-center font-jost text-4xl md:text-6xl lg:text-8xl font-bold translate-y-12 md:translate-y-16"
+          initial={{ backgroundPosition: "100%" }}
+          animate={{ backgroundPosition: "-100%" }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 5,
+            ease: "easeInOut",
+          }}
+          style={{
+            background:
+              "linear-gradient(120deg, #17414F 45%, rgba(23, 65, 79, 0.6) 50%, #17414F 55%)",
+            backgroundSize: "200% 100%",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+          }}
+        >
           Essential Vitamins
-        </h1>
-        <div className="flex flex-col md:flex-row justify-cent eer md:justify-evenly gap-6 mt-20 items-center">
+        </MotionH2>
+
+        <div className="flex flex-col md:flex-row justify-center md:justify-evenly gap-6 mt-20 items-center">
           {/* First Column */}
           <div className="space-y-4 flex flex-col w-48 order-2 md:order-1 text-center md:text-left">
             <h2 className="text-sm text-primary">Online Medical Supplies</h2>
@@ -97,14 +116,14 @@ const Hero = () => {
               <div>
                 <h3 className="text-lg font-bold">Functional Foods</h3>
                 <p className="text-sm text-gray-600">
-                  Functional Foods from protein powers to baby formula
+                  Functional Foods from protein powders to baby formula
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Third Column */}
+        {/* Third Column (Mobile & Tablet View) */}
         <div className="md:flex lg:hidden flex-row justify-evenly items-center order-3 mt-20 hidden">
           {/* First Sub-column */}
           <div className="flex flex-col items-center justify-center text-center space-y-4 p-6">
@@ -147,7 +166,7 @@ const Hero = () => {
             <div>
               <h3 className="text-lg font-bold">Functional Foods</h3>
               <p className="text-sm text-gray-600">
-                Functional Foods from protein powers to baby formula
+                Functional Foods from protein powders to baby formula
               </p>
             </div>
           </div>
