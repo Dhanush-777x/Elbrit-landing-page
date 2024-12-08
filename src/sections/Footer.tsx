@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-white py-10">
+    <footer className="bg-primary text-white py-10" id="footerSection">
       <div className="container mx-auto px-6">
         {/* Cards Section */}
         <div className="flex gap-4 justify-center flex-wrap lg:flex-nowrap lg:justify-evenly mb-8">

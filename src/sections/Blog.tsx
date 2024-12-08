@@ -63,7 +63,7 @@ const Blog = () => {
   console.log(blogs[1].image);
 
   return (
-    <section className="my-20">
+    <section className="my-20" id="blogSection">
       <div className="container">
         {/* Heading */}
         <div className="text-center mb-8">

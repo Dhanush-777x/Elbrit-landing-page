@@ -52,7 +52,7 @@ const Ingredients = () => {
   ];
 
   return (
-    <section className="p-4 md:p-10">
+    <section className="p-4 md:p-10" id="ingredientsSection">
       <div className="container mx-auto">
         {/* First Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">

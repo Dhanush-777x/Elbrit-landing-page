@@ -48,7 +48,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="relative z-0">
+    <section className="relative z-0" id="featuresSection">
       <div
         className="container mx-auto -translate-y-24 md:-translate-y-28"
       >
