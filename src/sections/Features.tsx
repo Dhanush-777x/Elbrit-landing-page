@@ -49,8 +49,10 @@ const Features = () => {
 
   return (
     <section className="relative z-0">
-      <div className="container mx-auto -translate-y-24 md:-translate-y-28">
-        <div className="bg-primary rounded-[60px] p-10 pb-0 shadow-lg">
+      <div
+        className="container mx-auto -translate-y-24 md:-translate-y-28"
+      >
+        <div className="bg-primary rounded-[60px] p-10 pb-0 shadow-xl">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <div

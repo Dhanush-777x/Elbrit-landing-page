@@ -5,30 +5,20 @@ import HeroImage from "@/assets/hero-img.png";
 import vitaminsIcon from "@/assets/Frame-8363.png.svg";
 import weightLossIcon from "@/assets/weight-loss.png";
 import functionalFoodIcon from "@/assets/functional-food.png";
-import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { MotionDiv } from "@/app/components/common/motion";
 import { MotionH2 } from "@/app/components/common/motion";
 
 const Hero = () => {
   const { scrollYProgress } = useScroll();
-  const motionDivY: MotionValue<number> = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [0, 300]
-  );
-  const scale: MotionValue<number> = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [1, 0.5]
-  );
+  const y = useTransform(scrollYProgress, [0, 1], [0, 300]);
 
   return (
     <section className="md:p-10 p-4">
       <MotionDiv
         className="bg-secondary p-6 pb-36 md:p-10 md:pb-36 rounded-lg container"
         style={{
-          y: motionDivY,
-          scale: scale,
+          y: y as any,
         }}
       >
         <MotionH2
