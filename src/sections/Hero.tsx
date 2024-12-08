@@ -18,7 +18,7 @@ const Hero = () => {
       <MotionDiv
         className="bg-secondary p-6 pb-36 md:p-10 md:pb-36 rounded-lg container"
         style={{
-          y: y as any,
+          translateY: y,
         }}
       >
         <MotionH2
