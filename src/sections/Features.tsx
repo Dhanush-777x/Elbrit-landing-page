@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { MotionDiv } from "@/app/components/common/motion";
 import feature1 from "@/assets/feature1.svg";
 import feature2 from "@/assets/feature2.svg";
 import feature3 from "@/assets/feature3.svg";
