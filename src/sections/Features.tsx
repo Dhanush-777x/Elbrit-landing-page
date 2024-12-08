@@ -50,14 +50,14 @@ const Features = () => {
   return (
     <section className="relative z-0">
       <div className="container mx-auto -translate-y-24 md:-translate-y-28">
-        <div className="bg-primary rounded-[60px] p-10 pb-0">
+        <div className="bg-primary rounded-[60px] p-10 pb-0 shadow-lg">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center p-6 rounded-lg -translate-y-24"
               >
-                <div className="flex items-center justify-center w-20 h-20 p-7 bg-white text-white rounded-full mb-4 text-2xl border-b-4 border-green-400">
+                <div className="flex items-center justify-center w-20 h-20 p-7 bg-white text-white rounded-full mb-4 text-2xl border-b-4 border-primary/90 shadow-lg">
                   <Image
                     src={feature.icon.src}
                     height={40}

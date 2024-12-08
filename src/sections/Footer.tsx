@@ -33,11 +33,11 @@ const Footer = () => {
     <footer className="bg-primary text-white py-10">
       <div className="container mx-auto px-6">
         {/* Cards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {cards.map((card) => (
             <div
               key={card.id}
-              className="flex items-center gap-4 bg-[#215D72] p-4 rounded-lg"
+              className="flex items-center gap-4 bg-[#215D72] p-4 rounded-lg shadow-md hover:shadow-lg"
             >
               {/* Image/Logo */}
               <Image
