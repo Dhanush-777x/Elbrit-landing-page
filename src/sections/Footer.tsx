@@ -10,22 +10,22 @@ const Footer = () => {
   const cards = [
     {
       id: 1,
-      image: Phone, // Replace with your image URL
-      heading: "About Us",
+      image: Phone,
+      heading: "Phone Number",
       description:
-        "Learn more about our mission, vision, and the team driving innovation.",
+        "+974 3118 1843",
     },
     {
       id: 2,
-      image: Mail, // Replace with your image URL
-      heading: "Contact Us",
-      description: "Reach out to us for support, inquiries, or collaboration.",
+      image: Mail, 
+      heading: "Email Address",
+      description: "Elbrithcqhr@gmail.com",
     },
     {
       id: 3,
-      image: Location, // Replace with your image URL
-      heading: "Follow Us",
-      description: "Stay connected with us on social media platforms.",
+      image: Location, 
+      heading: "Office Location",
+      description: "Ambassador Street, Zone 61",
     },
   ];
 
@@ -33,19 +33,19 @@ const Footer = () => {
     <footer className="bg-primary text-white py-10">
       <div className="container mx-auto px-6">
         {/* Cards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div className="flex gap-4 justify-center flex-wrap lg:flex-nowrap lg:justify-evenly mb-8">
           {cards.map((card) => (
             <div
               key={card.id}
-              className="flex items-center gap-4 bg-[#215D72] p-4 rounded-lg shadow-md hover:shadow-lg"
+              className="flex w-full md:w-1/2 lg:w-1/3 justify-start items-center gap-8 bg-[#215D72] px-6 py-4 rounded-lg shadow-md hover:shadow-lg"
             >
               {/* Image/Logo */}
               <Image
                 src={card.image.src}
-                width={50}
-                height={50}
+                width={60}
+                height={60}
                 alt={card.heading}
-                className="object-cover"
+                className="object-cover w-12 h-12"
               />
 
               {/* Text Content */}
@@ -59,7 +59,7 @@ const Footer = () => {
 
         {/* Logo and Info Section */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-          <div className="gap-4 flex flex-col items-center justify-center w-full">
+          <div className="gap-4 flex flex-row items-center justify-center w-full">
             {/* Logo */}
             <div className="flex justify-center items-center">
               <Image

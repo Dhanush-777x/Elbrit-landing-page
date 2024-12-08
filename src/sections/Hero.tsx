@@ -8,6 +8,7 @@ import functionalFoodIcon from "@/assets/functional-food.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MotionDiv } from "@/app/components/common/motion";
 import { MotionH2 } from "@/app/components/common/motion";
+import { Circle } from "lucide-react";
 
 const Hero = () => {
   const { scrollYProgress } = useScroll();
@@ -33,7 +34,7 @@ const Hero = () => {
           }}
           style={{
             background:
-              "linear-gradient(120deg, #17414F 45%, rgba(23, 65, 79, 0.6) 50%, #17414F 55%)",
+              "linear-gradient(120deg, #003569 45%, rgba(0, 53, 105, 0.6) 50%, #003569 55%)",
             backgroundSize: "200% 100%",
             WebkitBackgroundClip: "text",
             color: "transparent",
@@ -179,6 +180,10 @@ const Hero = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="gap-2 mx-24 hidden lg:flex">
+          <div className="w-6 h-6 bg-gray-300 rounded-full"></div>
+          <div className="w-6 h-6 bg-gray-300 rounded-full"></div>
         </div>
       </MotionDiv>
     </section>
