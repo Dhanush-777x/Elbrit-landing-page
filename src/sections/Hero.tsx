@@ -8,7 +8,6 @@ import functionalFoodIcon from "@/assets/functional-food.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MotionDiv } from "@/app/components/common/motion";
 import { MotionH2 } from "@/app/components/common/motion";
-import { Circle } from "lucide-react";
 
 const Hero = () => {
   const { scrollYProgress } = useScroll();
