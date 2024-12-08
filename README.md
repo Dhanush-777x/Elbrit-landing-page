@@ -20,8 +20,6 @@ npm install
 npm run dev
 ```
 
-## Features
-
 ## Technologies Used
 
 - Next.js 
